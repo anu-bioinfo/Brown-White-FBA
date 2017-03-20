@@ -1,0 +1,37 @@
+Reaction_id,Reaction_name,Description,LB,UB,Corresponding Metabolite,Media_concentration [mM],Theoretical_max_flux [mmol/gDw/hr],Theoretical_max [mmol/(l cell)/(min)],Theoretical_max_strict_mmol_gDw_hr,Turner_2011_mmol_hr_trillion,Turner_2011_mmol_gDw_hr,Essential?,Plot Name
+R_EX_arg_L_LPAREN_e_RPAREN_,EX_arg_L(e),L-Arginine exchange,-1,1000,L-Arginine-HCl,0.398,0.5572,1.54424,0.06965,19.38,0.005814,n,L-Arginine-HCl
+R_EX_ca2_LPAREN_e_RPAREN_,EX_ca2(e),Calcium exchange,-1,1000,Calcium Chloride (CaCl2) (anhyd.),1.8,2.52,6.984,0.315,0,0.315,y,Calcium Chloride (CaCl2) (anhyd.)
+R_EX_cl_LPAREN_e_RPAREN_,EX_cl(e),exchange reaction for Chloride,-1000,0,"Sodium Chloride (NaCl), CaCl2, KCl",110.34,154.476,428.1192,19.3095,0,19.3095,y,"Sodium Chloride (NaCl), CaCl2, KCl"
+R_EX_co2_LPAREN_e_RPAREN_,EX_co2(e),CO2 exchange,-100,1000,atmosphere,0,0,0,0,0,0,n,atmosphere
+R_EX_fe3_LPAREN_e_RPAREN_,EX_fe3(e),Fe3+ exchange,-1,1000,Ferric Nitrate (Fe(NO3)3-9H2O),0.000248,0.0003472,0.00096224,0.0000434,0,0.0000434,y,Ferric Nitrate (Fe(NO3)3-9H2O)
+R_EX_fol_LPAREN_e_RPAREN_,EX_fol(e),exchange reaction for Folate,-1000,0,Folic Acid,0.00906,0.012684,0.0351528,0.0015855,0,0.0015855,y,Folic Acid
+R_EX_chol_LPAREN_e_RPAREN_,EX_chol(e),exchange reaction for Choline,-1000,0,Choline Chloride,0.0285,0.0399,0.11058,0.0049875,0,0.0049875,y,Choline Chloride
+R_EX_glc_LPAREN_e_RPAREN_,EX_glc(e),D-Glucose exchange,-1,1000,D-Glucose,25,35,97,4.375,307.45,0.092235,n,D-Glucose
+R_EX_gln_L_LPAREN_e_RPAREN_,EX_gln_L(e),exchange reaction for L-glutamine,-1,1000,L-Glutamine,4,5.6,15.52,0.7,68.12,0.020436,n,L-Glutamine
+R_EX_gly_LPAREN_e_RPAREN_,EX_gly(e),exchange reaction for Glycine,-1000,0,Glycine,0.399,0.5586,1.54812,0.069825,0.73,0.000219,n,Glycine
+R_EX_h_LPAREN_e_RPAREN_,EX_h(e),exchange reaction for proton,-100,1000,H2O,1000,1000,1000,1000,0,1000,n,H2O
+R_EX_h2o_LPAREN_e_RPAREN_,EX_h2o(e),H2O exchange,-100,1000,H2O,1000,1400,3880,1000,0,1000,y,H2O
+R_EX_his_L_LPAREN_e_RPAREN_,EX_his_L(e),exchange reaction for L-histidine,-1000,0,L-Histidine HCl-H2O,0.2,0.28,0.776,0.035,1.79,0.000537,y,L-Histidine HCl-H2O
+R_EX_inost_LPAREN_e_RPAREN_,EX_inost(e),myo-Inositol exchange,-1,1000,i-Inositol,0.04,0.056,0.1552,0.007,0,0.007,n,i-Inositol
+R_EX_k_LPAREN_e_RPAREN_,EX_k(e),K+ exchange,-1,1000,KCl,5.3,7.42,20.564,0.9275,0,0.9275,y,KCl
+R_EX_Lcystin_LPAREN_e_RPAREN_,EX_Lcystin(e),L-Cystine exchange,-1,1000,L-Cystine 2HCl,0.399,0.5586,1.54812,0.069825,0,0.069825,n,L-Cystine 2HCl
+R_EX_leu_L_LPAREN_e_RPAREN_,EX_leu_L(e),L-Leucine exchange,-1,1000,L-Leucine,0.802,1.1228,3.11176,0.14035,8.08,0.002424,y,L-Leucine
+R_EX_lys_L_LPAREN_e_RPAREN_,EX_lys_L(e),L-Lysine exchange,-1,1000,L-Lysine-HCl,0.798,1.1172,3.09624,0.13965,4.92,0.001476,y,L-Lysine-HCl
+R_EX_na1_LPAREN_e_RPAREN_,EX_na1(e),exchange reaction for Sodium,-1000,0,NaCl,110.34,154.476,428.1192,19.3095,0,19.3095,y,NaCl
+R_EX_o2_LPAREN_e_RPAREN_,EX_o2(e),exchange reaction for oxugen,-1000,0,O2,1000,1400,3880,1000,0,1000,y,O2
+R_EX_oh1_LPAREN_e_RPAREN_,EX_oh1(e),exchange reaction for hydroxide ion,-1000,1000,H2O,1000,1400,3880,1000,0,1000,n,H2O
+R_EX_phe_L_LPAREN_e_RPAREN_,EX_phe_L(e),exchange reaction for L-phenylalanine,-1000,0,L-Phenylalanine,0.4,0.56,1.552,0.07,3.06,0.000918,y,L-Phenylalanine
+R_EX_pi_LPAREN_e_RPAREN_,EX_pi(e),Phosphate exchange,-100,1000,Sodium Phosphate (NaH2PO4-H2O),0.906,1.2684,3.51528,0.15855,0,0.15855,n,Sodium Phosphate (NaH2PO4-H2O)
+R_EX_pnto_R_LPAREN_e_RPAREN_,EX_pnto_R(e),(R)-Pantothenate exchange,-100,1000,D-Ca pantothenate,0.0083,0.01162,0.032204,0.0014525,0,0.0014525,n,D-Ca pantothenate
+R_EX_pydx_LPAREN_e_RPAREN_,EX_pydx(e),exchange reaction for Pyridoxal,-1000,0,Pyridoxal HCl,0.0196,0.02744,0.076048,0.00343,0,0.00343,y,Pyridoxal HCl
+R_EX_ribflv_LPAREN_e_RPAREN_,EX_ribflv(e),exchange reaction for Riboflavin,-1000,0,Riboflavin,0.00106,0.001484,0.0041128,0.0001855,0,0.0001855,y,Riboflavin
+R_EX_so4_LPAREN_e_RPAREN_,EX_so4(e),Sulfate exchange,-100,1000,Magnesium Sulfate (MgSO4),0.813,1.1382,3.15444,0.142275,0,0.142275,n,Magnesium Sulfate (MgSO4)
+R_EX_thr_L_LPAREN_e_RPAREN_,EX_thr_L(e),L-Threonine exchange,-1,1000,L-Threonine,0.078,0.1092,0.30264,0.01365,4.18,0.001254,y,L-Threonine
+R_EX_trp_L_LPAREN_e_RPAREN_,EX_trp_L(e),L-Tryptophan exchange,-1,1000,L-Tryptophan,0.078,0.1092,0.30264,0.01365,1,0.0003,y,L-Tryptophan
+R_EX_tyr_L_LPAREN_e_RPAREN_,EX_tyr_L(e),L-Tyrosine exchange,-1,1000,L-Tyrosine 2Na 2H20,0.398,0.5572,1.54424,0.06965,2.54,0.000762,n,L-Tyrosine 2Na 2H20
+R_EX_val_L_LPAREN_e_RPAREN_,EX_val_L(e),L-Valine exchange,-1,1000,L-Valine,0.803,1.1242,3.11564,0.140525,6.1,0.00183,y,L-Valine
+R_EX_ncam_LPAREN_e_RPAREN_,EX_ncam(e),Nicotinamide exchange,-1,1000,Niacinamide,0.0328,0.04592,0.127264,0.00574,0,0.00574,y,Niacinamide
+R_EX_ser_L_LPAREN_e_RPAREN_,EX_ser_L(e),exchange reaction for L-serine,-1,1000,L-Serine,0.4,0.56,1.552,0.07,12.89,0.003867,n,L-Serine
+R_EX_ile_L_LPAREN_e_RPAREN_,EX_ile_L(e),L-Isoleucine exchange,-1,1000,L-Isoleucine,0.802,1.1228,3.11176,0.14035,6.77,0.002031,y,L-Isoleucine
+R_EX_met_L_LPAREN_e_RPAREN_,EX_met_L(e),L-Methionine exchange,-1,1000,L-Methionine,0.201,0.2814,0.77988,0.035175,2.33,0.000699,y,L-Methionine
+R_EX_thm_LPAREN_e_RPAREN_,EX_thm(e),exchange reaction for Thiamin,-1000,0,Thiamine HCl,0.0118,0.01652,0.045784,0.002065,0,0.002065,y,Thiamine HCl

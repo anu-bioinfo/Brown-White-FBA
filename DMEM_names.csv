@@ -1,0 +1,39 @@
+,DMEM_ids,common_name
+1,EX_arg_L(e)in,L-Arginine
+2,EX_ca2(e)in,Calcium
+3,EX_cl(e)in,Chloride
+4,EX_co(e)in,Carbon Monoxide
+5,EX_co2(e)in,Carbon Dioxide
+6,EX_fe3(e)in,Iron (Fe3+)
+7,EX_fol(e)in,Folate
+8,EX_chol(e)in,Choline
+9,EX_glc(e)in,D-Glucose
+10,EX_gln_L(e)in,L-Glutamine
+11,EX_gly(e)in,Glycine
+12,EX_h(e)in,Protons
+13,EX_h2o(e)in,Water
+14,EX_his_L(e)in,L-Histidine
+15,EX_inost(e)in,myo-inositol
+16,EX_k(e)in,Potassium
+17,EX_Lcystin(e)in,L-Cysteine
+18,EX_leu_L(e)in,L-Leucine
+19,EX_lys_L(e)in,L-Lysine
+20,EX_na1(e)in,Sodium
+21,EX_o2(e)in,Oxygen
+22,EX_oh1(e)in,Hydroxide
+23,EX_phe_L(e)in,L-Phenylalanine
+24,EX_pi(e)in,Phosphate
+25,EX_pnto_R(e)in,Pantothenate
+26,EX_pydx(e)in,Pyridoxal
+27,EX_ribflv(e)in,Riboflavin
+28,EX_so4(e)in,Sulfate
+29,EX_thr_L(e)in,L-Threonine
+30,EX_trp_L(e)in,L-Tryptophan
+31,EX_tyr_L(e)in,L-Tyrosine
+32,EX_val_L(e)in,L-Valine
+33,EX_ncam(e)in,Nictonamide
+34,EX_ser_L(e)in,L-Serine
+35,EX_ile_L(e)in,L-Isoleucine
+36,EX_met_L(e)in,L-Methionine
+37,EX_thm(e)in,Thiamin
+38,carbon_uptake,Carbon Uptake

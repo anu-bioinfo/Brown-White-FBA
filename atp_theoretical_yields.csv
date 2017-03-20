@@ -1,0 +1,42 @@
+carbon_source,Name,theoretical_yield,food_yield,Comments
+EX_glc(e)in,Glucose,31,28.9,
+EX_fru(e)in,Fructose,31,,
+EX_ppa(e)in,Propionic Acid,16.25,12.8,C3:0
+EX_but(e)in,Butyric Acid,21.5,19.8,C4:0
+EX_hx(e)in,Caproic Acid,35.25,,C6:0
+EX_octa(e)in,Caprylic Acid,49,,C8:0
+EX_HC02175(e)in,Capric Acid,62.75,58.1,C10:0
+EX_HC02176(e)in,Lauric Acid,76.5,,C12:0
+EX_ttdca(e)in,Myristic aAcid,90.25,83.6,C14:0
+EX_hdca(e)in,Palmitic Acid,104,96.3,C16:0
+EX_ocdca(e)in,Stearic Acid,117.75,109.1,C18:0
+EX_arach(e)in,Arachidic Acid,131.5,121.8,C20:0
+EX_docosac_in,Behenic Acid,142.5,,C22:0
+EX_lgnc(e)in,Lignoceric Acid,155.5,,C24:0
+EX_hexc(e)in,Cerotic Acid,165.7,,C26:0
+EX_ala_L(e)in,Alanine,14.75,11.5,
+EX_arg_L(e)in,Arginine,27,20.2,
+EX_asn_L(e)in,Asparagine,14.75,9.3,
+EX_asp_L(e)in,Aspartate,14.75,11.5,
+EX_cys_L(e)in,Cysteine,17.25,11.5,
+EX_gln_L(e)in,Glutamine,22,15.8,
+EX_glu_L(e)in,Glutamate,22,18,
+EX_gly(e)in,Glycine,7.875,4.7,
+EX_his_L(e)in,Histidine,24.875,15.9,
+EX_ile_L(e)in,Isoleucine,35,30,
+EX_leu_L(e)in,Leucine,32.75,29,
+EX_lys_L(e)in,Lyseine,31.5,26.2,
+EX_met_L(e)in,Methionine,26.625,19.7,
+EX_phe_L(e)in,Phenylalanine,32.25,28.4,
+EX_pro_L(e)in,Proline,26,21.5,
+EX_ser_L(e)in,Serine,13.25,9.2,
+EX_thr_L(e)in,Threonine,18.75,16,
+EX_trp_L(e)in,Tryptophan,38.75,32.4,
+EX_tyr_L(e)in,Tyrosine,34.75,30.7,
+EX_val_L(e)in,Valine,28.5,23.3,
+EX_glyc(e)in,Glycerol,,16.5,
+EX_hdcea(e)in,Palmitoleic,,94.9,C16:1
+EX_ocdcea(e)in,Oleate,,107.7,C18:1
+EX_lnlc(e)in,Linoleic Acid,,105.4,C18:2
+EX_ac(e)in,Acetic Acid,,7.1,
+EX_etoh(e)in,Ethanol,,10.1,
