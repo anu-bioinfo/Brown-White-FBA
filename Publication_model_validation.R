@@ -226,8 +226,8 @@ save(pread_model, file="Recon21A_robject.RData")
 #Note 1: the function fails for level 3 annotation.
 #Note 2: the function also fails for printNotes=printAnnos=T
 #Note 3: I figured it it out: for level=3, printNotes=printAnnos=T, you must set fbcLevel=2.  The manual lies about
-#fbcLevel=2.  
-#Note 4: Nope, it failed again.  The actual problem is in printAnnos=T when NAs exit in those dataframes, which
+#fbcLevel=2 as default.
+#Note 4: Nope, it failed again.  The actual problem is in printAnnos=T when NAs exist in those dataframes, which
 #eventually produces a segfault.  The "fix" is to replace those NAs with the relevant annotation, or just "" out of laziness.
 #pread_model is recon2.1A
 pread_model@react_attr[is.na(pread_model@react_attr)] <- ""

@@ -32,22 +32,22 @@ options(stringsAsFactors=F) #Force of habit
 
 #Change some global settings.
 SYBIL_SETTINGS(c("SOLVER"), c("cplexAPI"))
+SYBIL_SETTINGS(c("TOLERANCE"), 1e-9)
 cores <- 16
 
 #Bring in the model
-#Skip to loading the pread model (line 173 if not interested in making the original model)
 #Note: This step can take up to 20 min for very large models (~70000 reactions)
 pread_model <- readSBMLmod(paste0(wd,"/Recon_21A.xml"))
 
 #Bring in some annotation and constraint data
 annotation_reactions <- read.delim(file="sybil_Recon21x_model_react.tsv") 
-DMEM_media_constraints <- read.csv(file="Recon2_constraints_media_adjusted_nonzero.csv")
+DMEM_media_constraints <- read.csv(file="Recon2_media_constraints_revised.csv")
 DMEM_names <- read.csv(file=paste0("./output_files/DMEM_names.csv"))
 blocked_reactions <- read.csv(file="Recon2_blocked_reactions.csv")
-adipocyte_data <- read.csv(file="BA_WA_input_data.csv")
+adipocyte_data <- read.csv(file="BA_WA_seahorse_data_v2.csv")
 carbon_inputs <- read.csv(file="atp_theoretical_yields.csv")
 escher_reactions <- read.csv(file="escher_reactions.csv")
-nova_data <- read.csv(file="nova_inputs_model.csv")
+nova_data <- read.csv(file="nova_inputs_model_v2.csv")
 lipid_objective <- read.csv(file="lipid_objective_coefficients.csv")
 
 #############################
@@ -113,7 +113,7 @@ ba_output <- foreach(i=1:nsamples, .combine=cbind) %dopar% {
     atp_leak_ba <- adipocyte_data[adipocyte_data[,"Tissue"] == tissue,"ATP_leak"]
     ocr_mito_min_ba <- adipocyte_data[adipocyte_data[,"Tissue"] == tissue,"OCR_basal"] - adipocyte_data[adipocyte_data[,"Tissue"] == tissue,"OCR_rotenone"]
     ocr_mito_max_ba <- adipocyte_data[adipocyte_data[,"Tissue"] == tissue,"OCR_fccp"] - adipocyte_data[adipocyte_data[,"Tissue"] == tissue,"OCR_rotenone"]
-    glc_uptake <- adipocyte_data[adipocyte_data[,"Tissue"] == tissue,"glucose_uptake"]
+    glc_uptake <- abs(nova_data_s[nova_data_s[,"Tissue"] == tissue,"Gluc_mean"])
     pmt_uptake <- adipocyte_data[adipocyte_data[,"Tissue"] == tissue,"Palmitate_uptake"]
     nh4_sec <- abs(nova_data_s[nova_data_s[,"Tissue"] == tissue,"NH4._mean"])
     gln_uptake <- abs(nova_data_s[nova_data_s[,"Tissue"] == tissue,"Gln_mean"])
@@ -122,7 +122,7 @@ ba_output <- foreach(i=1:nsamples, .combine=cbind) %dopar% {
     k_uptake <- abs(nova_data_s[nova_data_s[,"Tissue"] == tissue,"K._mean"])
     h_sec <- adipocyte_data[adipocyte_data[,"Tissue"] == tissue,"PPR_basal"]
     
-    biomass_ba <- log(2)/76.8
+    biomass_ba <- 0
     ba_lb <- c(ocr_ba,0,ppr_ba_in,ppr_ba_ex,atps4m_ba, atp_leak_ba, ocr_mito_min_ba, biomass_ba, glc_uptake,0,pmt_uptake, 0,gln_uptake,0,0,nh4_sec,
                0, glu_sec, 0, h_sec,0,0)
     ba_ub <- c(ocr_ba,0,ppr_ba_in,ppr_ba_ex,atps4m_ba, atp_leak_ba, ocr_mito_max_ba, 1000, glc_uptake,0,pmt_uptake, 0, gln_uptake,0,0,nh4_sec,
@@ -142,5 +142,5 @@ ba_output <- foreach(i=1:nsamples, .combine=cbind) %dopar% {
   ba_output <- ba_fluxes_df
 }
 rownames(ba_output) <- secretory_reactions
-write.csv(ba_output, file=paste0(od, "/model_seahorse_nova_white_predictions.csv"))
+write.csv(ba_output, file=paste0(od, "/model_seahorse_nova_white_predictions_v6.csv"))
 save(ba_output, file=paste0(od, "/model_seahorse_nova_white_predictions.RData"))
